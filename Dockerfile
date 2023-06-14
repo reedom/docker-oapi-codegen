@@ -1,7 +1,7 @@
 # Build
 FROM golang:1.18-alpine as builder
 # RUN apk --no-cache add git gcc g++ musl-dev
-RUN go install github.com/reedom/oapi-codegen/cmd/oapi-codegen@v1.11.0+r8
+RUN go install github.com/reedom/oapi-codegen/cmd/oapi-codegen@v1.13.0+r1
 
 # Run
 FROM alpine:3.16
